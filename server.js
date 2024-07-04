@@ -13,11 +13,13 @@ import { handleAPICall, handleImage } from "./controllers/image.js";
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      port : '5432',
-      user : 'daisukea',
-      password : '',
-      database : 'smart-brain'
+      connectionString : 'postgresql://face_detector_app_database_cmqi_user:TKanfFs265BJ78xVqCimpehicuFabwCz@dpg-cq30462ju9rs7394tp8g-a.oregon-postgres.render.com/face_detector_app_database_cmqi',
+      ssl: true,
+      // host : '127.0.0.1',
+      // port : '5432',
+      // user : 'daisukea',
+      // password : '',
+      // database : 'smart-brain'
     }
   });
 
