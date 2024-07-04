@@ -9,6 +9,11 @@ const handleAPICall = (req, res) => {
     
     // Your PAT (Personal Access Token) can be found in the portal under Authentification
     // PAT is exposed to user if defining it in frontend. Move it to backend
+
+    // Due to this being a small project with minimal security concerns regarding other
+    // using api keys I will comment the API Key here for future reference
+    // API KEY: f8d13ed4152b4448925b78256ba91475
+
     const PAT = process.env.CLARIFAI_API;
     
     // Specify the correct user_id/app_id pairings

@@ -1,5 +1,5 @@
 const handleAPI = (req, res) => {
-    res.json('f8d13ed4152b4448925b78256ba91475');
+    res.json(process.env.CLARIFAI_API);
 }
 
 export {handleAPI};
